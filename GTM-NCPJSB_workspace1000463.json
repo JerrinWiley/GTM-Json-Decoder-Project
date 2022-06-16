@@ -1,0 +1,5157 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-06-16 15:18:49",
+    "containerVersion": {
+        "path": "accounts/74449412/containers/1209720/versions/0",
+        "accountId": "74449412",
+        "containerId": "1209720",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/74449412/containers/1209720",
+            "accountId": "74449412",
+            "containerId": "1209720",
+            "name": "prod wineaccess.com",
+            "publicId": "GTM-NCPJSB",
+            "notes": "Removed all Marin Tracking",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1579002075892",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/74449412/containers/1209720/workspaces?apiLink=container"
+        },
+        "trigger": [
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "1",
+                "name": "dle-full reg-create account-convert",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Create-Account-Convert"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192712059",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "2",
+                "name": "dle-account-prompt",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Create-Account-Prompt"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192443502",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "3",
+                "name": "dle-homepage-quickreg-prompt",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Homepage-QuickReg-Trigger"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193038500",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "4",
+                "name": "dle-checkout-from email complete",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Checkout-Complete"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{pc-wa_from_email}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "yes"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192604406",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "5",
+                "name": "dle-checkout-complete",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Checkout-Complete"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{pc-wa_from_email}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "yes"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192598294",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "14",
+                "name": "pageview-winery schema-a_robert",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a_robert/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567195535639",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "22",
+                "name": "dle-review rating email",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "review_rating_email"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254286",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "34",
+                "name": "dle-homepage-quickreg-recapture",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Homepage-QuickReg-ReCapture"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192751057",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "35",
+                "name": "dle-account-recapture",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Full-ReCapture"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192450629",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "63",
+                "name": "dle-credit card added",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "new-credit-card-added"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192628943",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "75",
+                "name": "dle-order change-delivery date",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "change-delivery-date"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192499086",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "79",
+                "name": "dle-order change-shipping method",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "change-ship-method"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192584090",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "83",
+                "name": "dle-account-forgot password",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "forgot-password"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193083737",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "87",
+                "name": "dle-ppto-cart add",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "PPTO-Cart-Add"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254315",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "88",
+                "name": "dle-ppto-product impressions",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "ppto-product-impressions"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254286",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "89",
+                "name": "dle-ppto-purchase",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "ppto-purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254317",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "90",
+                "name": "dle-product-click",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "product-click"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193443937",
+                "parentFolderId": "457"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "92",
+                "name": "dle-product-impressions",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "product-impressions"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193470575",
+                "parentFolderId": "457"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "93",
+                "name": "dle-purchase-checkout thank you",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchase"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "(checkout/thank-you|new-checkout|/checkout/|old-checkout)"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1631924034615",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "94",
+                "name": "dle-reset password",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "reset-password"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193558403",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "95",
+                "name": "dle-sign_in-success",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "sign-in-success"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193656060",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "108",
+                "name": "dle-product-click-2",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "productClick"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193505587",
+                "parentFolderId": "457"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "152",
+                "name": "dle-join wineaccess-full reg prompt",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{url-url}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "join-wine-access"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Target}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "accounts/login"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1567192930085",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "154",
+                "name": "DLE FullReg Prompt join-wine-access 2",
+                "type": "LINK_CLICK",
+                "autoEventFilter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{url-url}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "join-wine-access"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Target}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "accounts/login"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "true"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1500914518289"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "156",
+                "name": "dle-scroll tracking",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "scrollTracking"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254318",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "163",
+                "name": "timer-store-scroll",
+                "type": "TIMER",
+                "autoEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*(/store|/catalog|/buy).*"
+                            }
+                        ]
+                    }
+                ],
+                "eventName": {
+                    "type": "TEMPLATE",
+                    "value": "gtm.timer"
+                },
+                "interval": {
+                    "type": "TEMPLATE",
+                    "value": "3000"
+                },
+                "limit": {
+                    "type": "TEMPLATE",
+                    "value": "1"
+                },
+                "fingerprint": "1595494254320",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "173",
+                "name": "timer-homepage-scroll",
+                "type": "TIMER",
+                "autoEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "https://wineaccess.com/"
+                            }
+                        ]
+                    }
+                ],
+                "eventName": {
+                    "type": "TEMPLATE",
+                    "value": "gtm.timer"
+                },
+                "interval": {
+                    "type": "TEMPLATE",
+                    "value": "3000"
+                },
+                "limit": {
+                    "type": "TEMPLATE",
+                    "value": "1"
+                },
+                "fingerprint": "1595494254361",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "176",
+                "name": "links-filter click class",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Classes}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "filters"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1567193062641",
+                "parentFolderId": "456"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "178",
+                "name": "dla-ga event",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "gaEvent"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254319",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "231",
+                "name": "pageview-home page-www.wineaccess com",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1646241822495",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "260",
+                "name": "pageview-store-red wine",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/red-wine/"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Old URL Equals New URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "false"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1621009509834",
+                "parentFolderId": "460"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "261",
+                "name": "pageview-store-white wine",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/white-wine/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193762142",
+                "parentFolderId": "460"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "262",
+                "name": "pageview-store-rose wine",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/sparkling-rose/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193718669",
+                "parentFolderId": "460"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "263",
+                "name": "pageview-store-sake",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/sake/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567193777050",
+                "parentFolderId": "460"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "283",
+                "name": "pageview-winery-opus_one",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "ENDS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/winery/opus-one/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1587573834393",
+                "parentFolderId": "50"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "290",
+                "name": "dom-url-pdf generator",
+                "type": "DOM_READY",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{url-url}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "pdf-generation"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254363",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "295",
+                "name": "pageview- 12-12c wines",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/12c_wines/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494254363",
+                "parentFolderId": "546"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "299",
+                "name": "pageview-winery schema-21grams",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/21_grams/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567191957891",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "301",
+                "name": "pageview-winery schema-32 winds",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/32_winds/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567191967362",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "304",
+                "name": "pageview-winery schema_christmann",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a._christmann/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192021645",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "307",
+                "name": "pageview-winery schema-a._f._gros",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a._f._gros/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567191972476",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "309",
+                "name": "pageview-winery schema-a._j._adam",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a._j._adam/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567191993132",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "311",
+                "name": "pageview-winery schema-a-margaine",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a._margaine/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567191999247",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "313",
+                "name": "pageview-winery schema-a-monmousseau",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a._monmousseau/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192003714",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "315",
+                "name": "pageview-winery schema-a.a_badenhorst",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a.a._badenhorst/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192008156",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "317",
+                "name": "pageview-winery schema-a.p._vin",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a.p._vin/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192013076",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "319",
+                "name": "pageview-winery schema-a.r_lenoble",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a.r._lenoble/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192017236",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "321",
+                "name": "pageview-winery schema-aalto",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/aalto/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192044321",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "324",
+                "name": "pageview-winery schema-a_to_z_wineworks",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/a_to_z_wineworks/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192031949",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "326",
+                "name": "pageview-winery schema-aaldering",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/aaldering/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192038923",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "328",
+                "name": "pageview-winery schema-abacela_estate",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abacela_estate/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192049396",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "330",
+                "name": "pageview-winery schema-abadia_da_cova",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abadia_da_cova_(adegas_moure)/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192054694",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "332",
+                "name": "pageview-winery schema-abadia_de_acon",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abadia_de_acon/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192061250",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "334",
+                "name": "pageview-winery schema-abadia_retuerta",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abadia_retuerta/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192073033",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "336",
+                "name": "pageview-winery schema-abbadia_ardenga",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abbadia_ardenga/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192089758",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "338",
+                "name": "pageview-winery schema-abbazia_di_novacella",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abbazia_di_novacella/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192099982",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "340",
+                "name": "pageview-winery schema-abbey._creek_gros",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abbey_creek_vineyard/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192104886",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "342",
+                "name": "pageview-winery schema-abbona_marziano_e_enrico",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abbona_marziano_e_enrico/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192109796",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "344",
+                "name": "pageview-winery schema-abeja",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abeja/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192116002",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "346",
+                "name": "pageview-winery schema-abellio",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abellio/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192121004",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "348",
+                "name": "pageview-winery schema-abreu",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/abreu/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192126168",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "350",
+                "name": "pageview-winery schema-acacia_region",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/acacia_region/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192131062",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "352",
+                "name": "pageview-winery schema-acacia_winery",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/acacia_winery/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192141340",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "354",
+                "name": "pageview-winery schema-achava_ferrer",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/achaval_ferrer/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192146737",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "356",
+                "name": "pageview-winery schema-ackerman_family_vineyards",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/ackerman_family_vineyards/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192155370",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "358",
+                "name": "pageview-winery schema-acorn_region",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/acorn_region/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192162517",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "360",
+                "name": "pageview-winery schema-acorn_winery",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/acorn_winery/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192168530",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "362",
+                "name": "pageview-winery schema-acustic_celler",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/acustic_celler/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192175159",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "364",
+                "name": "pageview-winery schema-ad_francos",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/ad_francos/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192181077",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "366",
+                "name": "pageview-winery schema-ad_lib",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/ad_lib/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192186457",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "368",
+                "name": "pageview-winery schema-ad_vitam",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/ad_vitam/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192192262",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "370",
+                "name": "pageview-winery schema-ada_nada",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/ada_nada/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192197906",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "372",
+                "name": "pageview-winery schema-adamant_cellars",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adamant_cellars/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192207498",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "374",
+                "name": "pageview-winery schema-adami",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adami/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192216372",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "376",
+                "name": "pageview-winery schema-adams_bench",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adams_bench/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192222852",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "378",
+                "name": "pageview-winery schema-adamvs",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adamvs/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192228924",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "380",
+                "name": "pageview-winery schema-adastra",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adastra/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192235840",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "382",
+                "name": "pageview-winery schema-addisat",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/addisat/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192242069",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "384",
+                "name": "pageview-winery schema-adea_wine_company",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adea_wine_company/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192254817",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "386",
+                "name": "pageview-winery schema-adega_algueira",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adega_algueira/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192261400",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "388",
+                "name": "pageview-wine schema-adega_cabaliero_do_val",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adega_cabaliero_do_val/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192268052",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "390",
+                "name": "pageview-winery schema-adega_cachin",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adega_cachin/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192276719",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "392",
+                "name": "pageview-winery schema-adega_condes_de_albarei",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adega_condes_de_albarei/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192284315",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "394",
+                "name": "pageview-winery schema-adega_coop_ponte_de_lima",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adega_coop_ponte_de_lima/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192290875",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "396",
+                "name": "pageview-winery schema-adega_cooperativa_de_borba",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/search/producer/adega_cooperativa_de_borba/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192296313",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "419",
+                "name": "pageview-product pages-all search",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "producer"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1567192302150",
+                "parentFolderId": "461"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "441",
+                "name": "pageview-checkout",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "(/checkout/|/new-checkout|old-checkout)"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1632334698400",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "474",
+                "name": "Wine Club Landing Page",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "https://www.wineaccess.com/club/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1608330583100",
+                "parentFolderId": "548"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "510",
+                "name": "SPA Pageview",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Old URL Equals New URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "false"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1596678254190",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "512",
+                "name": "EE - Add To Cart (Store)",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div.add-to-cart button"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494354356",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "516",
+                "name": "EE - Add To Cart (Catalog)",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "section.pdp-primary div.add-to-cart button"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/catalog/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595524574210",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "518",
+                "name": "EE - Add To Cart (Featured Products Carousel)",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div#featured-product-cells-carousel div.add-to-cart button"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595524620450",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "522",
+                "name": "EE - Remove From Cart (Flyout -)",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div button.change-quantity.minus"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494354402",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "525",
+                "name": "EE - Remove From Cart (Flyout X)",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div.remove a"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1595494354400",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "528",
+                "name": "EE - Add To Cart (Flyout +)",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div button.change-quantity.plus"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1595494354401",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "529",
+                "name": "EE - Product Click (Store)",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "section.products ul.product-grid li a"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1595494354401",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "532",
+                "name": "EE - Product Click (Recommendations)",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div#featured-product-cells-carousel ul.product-grid li a"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1595494354444",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "536",
+                "name": "Search Results (Responsive)",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1597299467398",
+                "parentFolderId": "119",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "div.search-results.open"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "MANY_PER_ELEMENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenDuration",
+                        "value": "1000"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "541",
+                "name": "Internal Search Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div.search-results ul a"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1595494354446",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "561",
+                "name": "User Authenticated",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{User Login State}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1596528757226"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "566",
+                "name": "EE - Shipping Address Complete",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1596611011113",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "#shipto-cases i.icon-success"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "567",
+                "name": "EE - Shipping Options Complete",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1596611213176",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "#shipping_method_options i.icon-success"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "568",
+                "name": "EE - Payment Options Complete",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1596611299457",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "#payment-cases i.icon-success"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "586",
+                "name": "Product Detail View",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1598206673648",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "div.pdp"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "MANY_PER_ELEMENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "1"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "587",
+                "name": "Footer Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div.footer-links a"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1596774498912"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "592",
+                "name": "FullReg Signup Form Submit",
+                "type": "FORM_SUBMISSION",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Form Classes}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "formulate-form"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Form Text}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Register"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "TEMPLATE"
+                },
+                "checkValidation": {
+                    "type": "TEMPLATE"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1596780031078"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "599",
+                "name": "New User Registration (Full)",
+                "type": "ELEMENT_VISIBILITY",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{FullReg Submit Flag}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604285990359",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "li.account span.dynamic"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "600",
+                "name": "Header Click",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "nav#site-navigation ul li.more-dup,nav#site-navigation ul li button, nav#site-navigation ul li a[href=\"/store/is_offer/true/\"],div.nested-menu ul>li button,div.nested-menu ul>li.more-dup,div.nested-menu ul li a[href=\"/giftcard/\"]"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1631728735760"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "602",
+                "name": "Header Click - Old Topnav",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div#nav-container a"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "member-nav"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1596996787268"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "603",
+                "name": "Header Click - Old Subnav",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div#nav-bottom li"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1596996953880"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "611",
+                "name": "Product Impressions (Featured Products)",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1597126254521",
+                "parentFolderId": "119",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "div#id_more_products ul"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "MANY_PER_ELEMENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "10"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "617",
+                "name": "Store Product Impressions Visible",
+                "type": "ELEMENT_VISIBILITY",
+                "filter": [
+                    {
+                        "type": "STARTS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "STARTS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/search"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1597309076752",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "section.products ul.product-grid"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "MANY_PER_ELEMENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "1"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "620",
+                "name": "Homepage Product Impressions Visible",
+                "type": "ELEMENT_VISIBILITY",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1597307954032",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "section.products ul.product-grid"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "622",
+                "name": "EE - Product Click (Homepage)",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "section.products.home a"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1597308467811",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "624",
+                "name": "Search Page Product Impressions Visible",
+                "type": "ELEMENT_VISIBILITY",
+                "filter": [
+                    {
+                        "type": "STARTS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/store/search"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1597309094902",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "section.products ul.product-grid"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "MANY_PER_ELEMENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "1"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "626",
+                "name": "Filter Click",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div.filters-container input"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1597309534209"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "628",
+                "name": "Sort By Click",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "li.sort li a"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1597310000306"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "630",
+                "name": "Remove Filter",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "div.appliedfilters-container button"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1597310221968"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "648",
+                "name": "Add To Cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "addToCart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604288465094"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "649",
+                "name": "Remove From Cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "removeFromCart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604290128563"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "650",
+                "name": "Product Click",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "product_click"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604291270949"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "651",
+                "name": "Product Impressions",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "productImpressions|product-impressions"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1645038859155"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "652",
+                "name": "Product Detail",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "productDetail"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604298701263"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "653",
+                "name": "Checkout Step 1",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkoutStep1"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604299258214"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "654",
+                "name": "Checkout Step 2",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkoutStep2"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604299273122"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "655",
+                "name": "Checkout Step 3",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkoutStep3"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604299286204"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "656",
+                "name": "Checkout Step 4",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkoutStep4"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1604299300125"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "673",
+                "name": "Impact Identify",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "impactIdentify"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "impactIdentify"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1607032907162"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "675",
+                "name": "Login Form Button Click",
+                "type": "FORM_SUBMISSION",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Text}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Login"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "TEMPLATE"
+                },
+                "checkValidation": {
+                    "type": "TEMPLATE"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1605859363311"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "677",
+                "name": "Logged In",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1605864101926",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "li.account span.dynamic"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "680",
+                "name": "Purchase Confirmation",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchaseDetails"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchaseDetails"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1625260195478"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "681",
+                "name": "Checkout Thank You Page",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkout/thank-you"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1605910927199"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "685",
+                "name": "Gift Card Thank You",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Gift Card Thank You"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1607497512984"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "686",
+                "name": "Wine Club Sign Up",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Wine Club Sign Up"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1607497559614"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "707",
+                "name": "Floodlight Conversion",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "floodlightConversion"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "(checkout/thank-you|new-checkout|/checkout/|old-checkout)"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1632334636373",
+                "parentFolderId": "52"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "709",
+                "name": "Login Page Before Checkout",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/accounts/login/?next=%2Fcheckout%2F"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1610692911731"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "717",
+                "name": "Expensive Napa Dana Set Trigger",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "2011-2016-dana-estates-cabernet-sauvignon-onda-napa-valley_a708bed1-c8ce-40e8-91ba-300a11cdb80c"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1613412030668"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "740",
+                "name": "Michelin Sign Up Button",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "formulate--michelin-join--4"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1620933925663"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "741",
+                "name": "Michelin PayPal Purchase Button Click",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click ID}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "paypalButton"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/michelin/join/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1620934424924"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "746",
+                "name": "404 Page",
+                "type": "ELEMENT_VISIBILITY",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/error"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1628194336365",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "#notfound > div > div"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "749",
+                "name": "500 Error",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1628194402801",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "#error-500"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "758",
+                "name": "dle - QuickReg",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "quickreg"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1629743475569"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "760",
+                "name": "dle - FullReg",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "fullreg"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1629748338644"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "762",
+                "name": "QuickReg Prompt",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1629754206130",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "#__layout > div > div.app-content > div.wine-team > section.generic.side-padding > section > div > div.modal__dialog.qes-modal-dialog"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "764",
+                "name": "QuickReg Prompt - Footer",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1629754622436",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "#footer-black > div:nth-child(1) > div:nth-child(4) > form"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "766",
+                "name": "Quickreg Prompt",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1629925964415",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementSelector",
+                        "value": "div[analytics-track=\"quickregPrompt\"]"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "ONCE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "CSS"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "769",
+                "name": "Header Click - New 09/14/21",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "header#wa-header a,div.sidenav-container a"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "li.account a"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1631655193284"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "771",
+                "name": "Save Email Preferences",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "CSS_SELECTOR",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click Element}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "#main > div > div.account-content > main > section > div > button.button.primary"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/accounts/email/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1631809844294"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "778",
+                "name": "Logged In Page View",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{User Login State}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1632985497292"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "779",
+                "name": "Logged In SPA Pageview",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Old URL Equals New URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{User Login State}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1632985486582",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "781",
+                "name": "Logged In Navigation",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "loggedInNavigation"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1633203969588"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "782",
+                "name": "Product Page",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/catalog"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1640286126227"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "787",
+                "name": "SPA Pageview (Product Page)",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Old URL Equals New URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/catalog/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1644961629603",
+                "parentFolderId": "119"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "788",
+                "name": "Product Page View",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/catalog/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1644961784245"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "809",
+                "name": "rokt - landing page",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{ROKT Landing Pages}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1653075247800"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "810",
+                "name": "Subscriptions Pageview",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/subscriptions"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1654903965560"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "811",
+                "name": "Wine Access Wine Club Page Views",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/club/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1654903953706"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "812",
+                "name": "Decanter Wine Club Page Views",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/decanter/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1654903945297"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "813",
+                "name": "Michelin Wine Club Page Views",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/michelin/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1654903932830"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "814",
+                "name": "Sunset Wine Club Page Views",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/sunset/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1654903916087"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "815",
+                "name": "Wine Folly Wine Club Page View",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/folly/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1654903903540"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "triggerId": "816",
+                "name": "Collectors Wine Club Page Views",
+                "type": "HISTORY_CHANGE",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/collectors/"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1654903887336"
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "50",
+                "name": "GA Search (Existing)",
+                "fingerprint": "1595494437968"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "52",
+                "name": "Checkout and Cart",
+                "fingerprint": "1472483409704"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "119",
+                "name": "GA New",
+                "fingerprint": "1595494196835"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "456",
+                "name": "Account Settings",
+                "fingerprint": "1567186706629"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "457",
+                "name": "eCommerce",
+                "fingerprint": "1567186804878"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "460",
+                "name": "Store",
+                "fingerprint": "1567188560240"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "461",
+                "name": "Producer",
+                "fingerprint": "1567190540135"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "546",
+                "name": "GA Existing",
+                "fingerprint": "1595494178731"
+            },
+            {
+                "accountId": "74449412",
+                "containerId": "1209720",
+                "folderId": "548",
+                "name": "Inactive",
+                "fingerprint": "1596003655380"
+            }
+        ],
+        "fingerprint": "1655392729380",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/74449412/containers/1209720/versions/0?apiLink=version"
+    }
+}
