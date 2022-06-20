@@ -32,6 +32,37 @@ filter = [
     }
 ]
 
+folder = [
+    {
+        "accountId": "27605728",
+        "containerId": "844498",
+        "folderId": "68",
+        "name": "Global Variables",
+        "fingerprint": "1455306776310"
+    },
+    {
+        "accountId": "27605728",
+        "containerId": "844498",
+        "folderId": "974",
+        "name": "Google Analytics Elements",
+        "fingerprint": "1574551691519"
+    },
+    {
+        "accountId": "27605728",
+        "containerId": "844498",
+        "folderId": "975",
+        "name": "Third-Party Elements",
+        "fingerprint": "1574551002425"
+    },
+    {
+        "accountId": "27605728",
+        "containerId": "844498",
+        "folderId": "976",
+        "name": "Global Triggers",
+        "fingerprint": "1574551021799"
+    }
+]
+
 customEventFilter = [
     {
         "type": "EQUALS",
@@ -164,7 +195,21 @@ def parameter_parser(parameter,type):
             pass
     return string
 
+def folder_dictionary(folder_list):
+    new_dict = {}
+    try:
+        for dict in folder_list:
+            # print(type(dict))
+            new_dict[dict['folderId']] = dict['name']
+    except:
+        print('Folder dictionary builder failed')
+    return (new_dict)
+
+
 # # Function tests
 # print(parameter_parser(parameter, 'elementVisibility'))
 # print(filter_parser(filter)[0])
 # print(event_parser(customEventFilter, 'customEvent')[0])
+# print(folder_dictionary(folder))
+# test_dict = folder_dictionary(folder)
+# print(test_dict['974'])

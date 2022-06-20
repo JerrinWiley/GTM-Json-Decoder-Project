@@ -2,24 +2,19 @@ import GTM_Trigger_Decoder as td
 import pandas as pd
 import os
 
-def audit(file_dir,output_dir, auto_open):
-    # print(auto_open)
+from trigger_methods import folder_dictionary
 
-    # Arguments passed
-    try:
-        file_name = file_dir
-        # print(file_name)
-    except:
-        print('Incorrect file:')
-        print(file_name)
-
-    # print('file_name: ' + file_name)
-    # print('file_name w/o path: ', os.path.basename(file_name))
-    export_file = output_dir+'//'+os.path.basename(file_name)[:-5] + '_cleaned.xlsx'
-
+def audit(file_dir,output_dir, auto_open, output_filename):
+    # declarations
+    export_file = output_dir+'//' + output_filename + '.xlsx'
     df = pd.read_json(file_dir)
-
-    trigger_df = td.trigger_decoder(df)
+    
+    # print(df)
+    try:
+        folder_dic = folder_dictionary(df.loc['folder','containerVersion'])
+    except:
+        print('Dictionary failed')
+    trigger_df = td.trigger_decoder(df, folder_dic)
 
    
     # print(type(export_file))
@@ -39,3 +34,11 @@ def audit(file_dir,output_dir, auto_open):
     
     if auto_open == 1:
             os.startfile(export_file)
+
+# # Test conditions
+# file_dir = 'GTM-MVPNN2_workspace1000413 (4).json'
+# output_dir = os.path.expanduser('~\downloads')
+# auto_open = 1
+
+
+# audit(file_dir,output_dir, auto_open)

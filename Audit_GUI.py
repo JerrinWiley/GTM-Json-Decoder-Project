@@ -5,11 +5,20 @@ from tkinter.filedialog import askopenfile
 import os
 
 root = tk.Tk()
+root.title('GTM Container Export Decoder')
 
 def input():
     input_path = filedialog.askopenfilename(title = "Open GTM Export JSON", initialdir = (os.path.expanduser('~\downloads')), filetypes=[('Json File', '*.json')])
     input_entry.delete(0, tk.END)  # Remove current text in entry
     input_entry.insert(0, input_path)  # Insert the 'path'
+    
+    # Create/populate output filename entry box
+    input_txt_description.pack()
+    input_txt.pack(pady=5)
+    begin_button.pack(pady=20, fill=tk.X)
+    input_txt.delete(0, tk.END)  # Remove current text in entry
+    default_output_filename = os.path.basename(input_entry.get())[:-5] + '_decoded'
+    input_txt.insert(0, default_output_filename)
 
 def output():
     path = filedialog.askdirectory(title = "Select output folder",initialdir = (os.path.expanduser('~\downloads')))
@@ -19,7 +28,10 @@ def output():
 def begin():
     target_JSON = input_entry.get()
     output_directory = output_entry.get()
-    Auditor.audit(target_JSON, output_directory, var1.get())
+    file_name = input_txt.get()
+    Auditor.audit(target_JSON, output_directory, var1.get(), file_name)
+
+
 
 
 top_frame = tk.Frame(root)
@@ -49,10 +61,11 @@ output_path.pack(pady=5)
 output_entry.pack(pady=5)
 browse2.pack(pady=5)
 
-
+input_txt = tk.Entry(bottom_frame, width=40)
+input_txt_description = tk.Label(bottom_frame, text = 'Output Filename:')
 
 var1 = tk.IntVar(value=1)
 open_output = tk.Checkbutton(bottom_frame, text = 'Automatically open results workbook', variable = var1, onvalue=1, offvalue=0, pady = 5)
 open_output.pack()
-begin_button.pack(pady=20, fill=tk.X)
+
 root.mainloop()

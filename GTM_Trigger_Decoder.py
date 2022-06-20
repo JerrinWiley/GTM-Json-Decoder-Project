@@ -1,7 +1,8 @@
+from sqlite3 import Row
 import pandas as pd
 import trigger_methods as tm
 
-def trigger_decoder(df):        
+def trigger_decoder(df, folder_dict):        
     # JSON to data frame
     df2 = df.loc['trigger','containerVersion']
     df3 = pd.DataFrame(df2)
@@ -72,7 +73,13 @@ def trigger_decoder(df):
         except: 
             pass
 
-    # print(df3.loc[0])
+    # Apply folder names
+    for index, row in df3.iterrows():
+        try:
+            folder_name = folder_dict[row.loc['parentFolderId']]
+            df3.loc[index, 'Folder Name'] = folder_name
+        except:
+            pass
 
     # clean up columns and reorder
     drop_filters = ['filter','fingerprint','autoEventFilter','waitForTags','checkValidation','waitForTagsTimeout','uniqueTriggerId', 'customEventFilter','parameter']
@@ -81,7 +88,7 @@ def trigger_decoder(df):
             df3 = df3.drop([filter], axis=1)
         except:
             pass
-    # df4 = df3.drop(['filter','fingerprint','autoEventFilter','waitForTags','checkValidation','waitForTagsTimeout','uniqueTriggerId', 'customEventFilter','parameter'], axis=1)
+
     last_col = len(df3.loc[0])
     order = []
     for i in range(last_col):
